@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 @Component
-public class InMemoryTimeEntryRepository extends TimeEntryRepository {
+public class InMemoryTimeEntryRepository implements TimeEntryRepository {
 
     Map<Long, TimeEntry> repositoryMap = new HashMap();
     long currentIdValue;

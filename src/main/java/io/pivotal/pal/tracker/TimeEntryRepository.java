@@ -5,24 +5,14 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
-public class TimeEntryRepository {
-    public TimeEntry create(TimeEntry timeEntry) {
-        return null;
-    }
+public interface TimeEntryRepository {
+    public TimeEntry create(TimeEntry timeEntry);
 
-    public TimeEntry find(long timeEntryId) {
-        return null;
-    }
+    public TimeEntry find(long timeEntryId);
 
-    public List<TimeEntry> list() {
-        return null;
-    }
+    public List<TimeEntry> list();
 
-    public TimeEntry update(long eq, TimeEntry any) {
-        return null;
-    }
+    public TimeEntry update(long eq, TimeEntry any);
 
-    public TimeEntry delete(long timeEntryId) {
-        return null;
-    }
+    public TimeEntry delete(long timeEntryId);
 }
